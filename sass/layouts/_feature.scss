@@ -1,0 +1,40 @@
+.feature {}
+
+.feature__icon {}
+
+.feature__image {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+
+}
+
+
+.feature__content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    & h3 {
+            margin-bottom: 10px;
+        }
+}
+
+.feature__item {
+    width: 270px;
+}
+
+.feature__title {
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.feature__text {
+    line-height: 1.7;
+    color: var(--text-color);
+}

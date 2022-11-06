@@ -1,0 +1,39 @@
+.gallery{
+    padding-top: 0;
+}
+
+
+.pictures {
+    display: flex;
+    gap: 30px;
+}
+
+.gallery__item {
+    width: calc((100 - 60) / 3);
+    gap: 30px;
+}
+
+.gallery__picture {}
+
+.bottom__wrap {
+
+    position: relative;
+
+}
+
+.bottom__gallery {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 27px 0;
+
+    color: var(--white-text);
+    background-color: rgba(47, 48, 58, 0.8);
+}
