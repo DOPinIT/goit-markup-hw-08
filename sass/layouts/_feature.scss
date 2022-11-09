@@ -1,17 +1,17 @@
-.feature {}
+.feature {
+    
+}
 
 .feature__icon {}
 
 .feature__image {
     display: flex;
-    gap: 30px;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
-
 }
 
 
@@ -25,7 +25,15 @@
 }
 
 .feature__item {
-    width: 270px;
+    width: 100%;
+
+                @include tablet {
+                    width: calc((100% - 30px) / 2);
+                }
+            
+                @include desktop {
+                    width: calc((100% - 3 * 30px) / 4);
+                }
 }
 
 .feature__title {
