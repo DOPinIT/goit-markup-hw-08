@@ -1151,12 +1151,6 @@ body {
   margin-bottom: 20px;
   padding-left: 1px;
 }
-@media screen and (min-width: 1200px) {
-  .footer-title {
-    align-items: start;
-    justify-content: start;
-  }
-}
 
 .footer-box {
   display: flex;
@@ -1167,8 +1161,8 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-box {
     display: flex;
+    align-items: baseline;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
 }
@@ -1240,7 +1234,6 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe-wrap {
     flex-wrap: nowrap;
-    flex-direction: row;
   }
 }
 
@@ -1260,8 +1253,7 @@ body {
     margin: 0;
     padding: 0;
     align-items: baseline;
-    justify-content: space-between;
-    margin-right: 93px;
+    justify-content: space-evenly;
   }
 }
 
