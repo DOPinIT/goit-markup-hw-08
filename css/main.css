@@ -312,7 +312,8 @@ body {
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px 0 48px 25px;
+  padding-top: 40px;
+  padding-bottom: 48px;
   background-color: var(--white-text);
   z-index: 1;
 }
@@ -323,7 +324,17 @@ body {
   justify-content: space-between;
   overflow: auto;
 }
+@media screen and (min-width: 480px) {
+  .mob-menu {
+    padding: 40px 0 48px 25px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
   .mob-menu {
     display: none;
   }
@@ -352,10 +363,18 @@ body {
 
 .mob-menu__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--header-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mob-contact__list {
@@ -364,18 +383,34 @@ body {
 
 .mob-contact-tel__link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 25px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .mob-contact-tel__link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
 
 .mob-contact-mail__link {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-contact-mail__link {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mob-team__soc {
@@ -400,14 +435,22 @@ body {
 
 .mob-team__soc-link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .mob-team__soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
+}
 
 .hero {
-  padding: 118px 60px;
+  padding: 118px 0px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -455,15 +498,24 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   letter-spacing: 0.06em;
-  width: 360px;
+  width: 280px;
   height: 84px;
   text-align: center;
   text-transform: uppercase;
   color: var(--white-text);
   margin: auto auto 30px auto;
+}
+@media screen and (min-width: 480px) {
+  .hero-text {
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-text {
@@ -1288,7 +1340,7 @@ body {
 }
 
 .footer-mail {
-  width: 450px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1305,6 +1357,11 @@ body {
 }
 .footer-mail::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .footer-mail {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-mail {
