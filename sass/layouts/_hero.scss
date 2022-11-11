@@ -14,14 +14,11 @@
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-    @include phone {
-        width: 480px;
             @include retina {
                     .box {
                         background-image: var(--bg-gradient), url(../images/mob/header-mob-x2.jpg);
                     }
                 }
-    }
 
         @include tablet {
         width: 768px;
@@ -37,13 +34,18 @@
             }
 
                 @include desktop {
-                    width: 1200px;
+                    width: 1600px;
                 padding: 200px 0;
                     background-image:
                             var(--bg-gradient),
                             url(../images/hero-bg.jpg); 
-            }
+@include retina {
+        .box {
+            background-image: var(--bg-gradient), url(../images/hero-bg-x2.jpg);
+        }
+    }
 }
+            }
 
 .hero-text {
     display: flex;

@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+
 }
 
 .customers-logo-item {
@@ -21,9 +22,10 @@
     @include phone {
             width: calc((100% - 30px) / 2 );
         }
-                    @mixin tablet {
-                            width: calc((100% - 30px) / 4 );
-                        }
+@include tablet {
+      @include calc(3);
+}
+
                     
     @include desktop {
             width: calc((100% - 3 * 30px) / 7);
@@ -47,6 +49,7 @@
         color: var(--accent-color);
         border-color: var(--accent-color);
     }
+    
 }
 
 .customer-icon {

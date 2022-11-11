@@ -4,6 +4,9 @@
     line-height: $lh;
     letter-spacing: $ls + em;
   }
+@mixin calc($value) {
+  width: calc((100% - 30px * ($value - 1)) / $value);
+}
 
 @mixin phone {
     @media screen and (min-width: 480px) {

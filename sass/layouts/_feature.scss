@@ -40,9 +40,17 @@
     font-size: 14px;
     line-height: 1.15;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        justify-content: start;
+    }
 }
 
 .feature__text {
     line-height: 1.7;
     color: var(--text-color);
+
 }
