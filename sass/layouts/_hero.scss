@@ -9,25 +9,31 @@
     background-image:
         var(--bg-gradient) ,
         url(../images/mob/header-mob.jpg);
-    max-width: 1600px;
+        width: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     flex-grow: 1;
             @include retina {
                     .box {
+                        max-width: 766px;
                         background-image: var(--bg-gradient), url(../images/mob/header-mob-x2.jpg);
                     }
                 }
 
+                @include phone {
+                    width: 480px;
+                }
+                
         @include tablet {
-        width: 768px;
+            width: 768px;
         padding: 118px 204px;
             background-image:
                     var(--bg-gradient),
                     url(../images/tablet/header-tab.jpg);
 @include retina {
                                 .box {
+                                    max-width: 1199px;
                                     background-image:var(--bg-gradient), url(../images/tablet/header-tab-x2.jpg);
                                 }
                             }
@@ -41,6 +47,7 @@
                             url(../images/hero-bg.jpg); 
 @include retina {
         .box {
+            width: 1600px;
             background-image: var(--bg-gradient), url(../images/hero-bg-x2.jpg);
         }
     }
@@ -64,7 +71,6 @@
         width: 360px;
         @include font(900, 26, 1.62, 0.06);
     }
-
     @include desktop {
         @include font(900, 44, 1.36, 0.06);
         width: 696px;

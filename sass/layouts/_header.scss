@@ -19,11 +19,16 @@
     @media screen and(max-width:767px) {
             display: none;
         }
-    
+    @include tablet {
+        max-width: 1199px;
+        bottom: 0;
+    }
+    @include desktop {
+        bottom: 4px;
+    }
 }
 
 .header {
-    // position: fixed;
     position: absolute;
     top: 0;
     left: 0;
@@ -34,6 +39,10 @@
     border-bottom: 1px solid #ECECEC;
     padding: 21px 0;
     width: 100%;
+
+    @include tablet {
+        
+    }
 
     @include desktop {
         position: fixed;
@@ -53,6 +62,7 @@
 
                 @include desktop {
                     max-width: 1200px;
+                    
                 }
 }
 .header .container {
@@ -149,6 +159,10 @@
     bottom: 0;
     left: 0;
     transform: scale(0);
+
+    @include desktop {
+        bottom: 4px;
+    }
 }
 
 .menu__link:hover::after {
@@ -174,6 +188,7 @@
             }
     @include desktop {
         flex-direction: row;
+        gap: 50px;
     }
 }
 

@@ -19,6 +19,7 @@
 
 .customers-logo-item {
     width: 100%;
+    width: calc((100% - 30px) / 2);
     @include phone {
             width: calc((100% - 30px) / 2 );
         }

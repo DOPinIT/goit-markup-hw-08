@@ -48,20 +48,20 @@
           </ul>
         </nav>
         <ul class="contact">
-          <li class="contact__list list">
-            <a href="tel:+380961111111" class="contact__link link"
-              ><svg class="contact-ico-phone" width="10" height="16">
-                <use href="./images/contactico.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
           <li class="comtact__list list">
             <a href="mailto:info@devstudio.com" class="contact__link link"
               ><svg class="contact-ico-mail" width="16" height="12">
                 <use href="./images/contactico.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__list list">
+            <a href="tel:+380961111111" class="contact__link link"
+              ><svg class="contact-ico-phone" width="10" height="16">
+                <use href="./images/contactico.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -808,6 +808,15 @@
       AOS.init({
         duration: 500,
       });
+    </script>
+    <script>
+      console.log(document.querySelector(".header"));
+
+      const { height: HeaderHeight } = document
+        .querySelector(".header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${HeaderHeight}px`;
     </script>
   </body>
 </html>
